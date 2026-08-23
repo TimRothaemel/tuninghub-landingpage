@@ -1,18 +1,58 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tuninghub Landing Page</title>
+    <title>TuningHub | Marktplatz für Simson- und Mopedteile</title>
+    <meta
+      name="description"
+      content="TuningHub kommt zurück: Trag dich in die Warteliste ein und unterstütze den Neustart des Marktplatzes für Simson- und Mopedteile."
+    />
+    <link rel="canonical" href="https://tuninghub.de/" />
+    <meta property="og:title" content="TuningHub kommt zurück" />
+    <meta
+      property="og:description"
+      content="Der Marktplatz für Simson- und Mopedteile startet neu, sobald 1000 Vorregistrierungen erreicht sind."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tuninghub.de/" />
+    <meta property="og:image" content="public/brand/THub-Logo-ohne-Hintergrund-500x200.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="public/brand/THub-Logo-ohne-Hintergrund-500x200.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bebas+Neue&family=IBM+Plex+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/styles/main.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "TuningHub",
+        "url": "https://tuninghub.de/",
+        "logo": "public/brand/THub-Logo-ohne-Hintergrund-500x200.png",
+        "sameAs": ["https://www.instagram.com/tuninghub_official/"]
+      }
+    </script>
   </head>
   <body>
-    <header>
-        <a href="/index.html">
-      <img
-        src="/public/brand/THub-Logo-ohne-Hintergrund-500x200.png"
-        alt="Tuninghub Logo"
-      /></a>
-      <nav>
+    <header class="site-header">
+      <a class="brand" href="/index.html" aria-label="TuningHub Startseite">
+        <img
+          src="public/brand/THub-Logo-ohne-Hintergrund-500x200.png"
+          alt="TuningHub Logo mit schwarzer Fläche und weißem T"
+        />
+      </a>
+
+      <button class="nav-toggle" aria-controls="site-navigation" aria-expanded="false" aria-label="Menü">
+        <span class="nav-toggle__box">
+          <span class="nav-toggle__inner"></span>
+        </span>
+      </button>
+
+      <nav id="site-navigation" class="site-nav" aria-label="Hauptnavigation">
         <ul>
           <li><a href="#ticker">Jetzt beitreten</a></li>
           <li><a href="#about">Über Tuninghub</a></li>
@@ -21,132 +61,152 @@
       </nav>
     </header>
     <main>
-      <section id="ticker">
-        <h2>Bring TuningHub zurück!</h2>
-        <p>
-          Bei 1000 vorab registrierten Nutzern wird TuningHub überarbeitet und
-          wieder verfügbar sein.
-        </p>
-        <button>
-          <a href="/src/pages/registrieren/registrieren.html">Jetzt vorab registrieren und TuningHub unterstützen</a>
-        </button>
+      <section class="section section--hero" id="ticker" aria-labelledby="ticker-title">
+        <div class="hero-copy">
+          <p class="section-kicker">Warteliste / Neustart</p>
+          <h1 id="ticker-title">Bring TuningHub zurück.</h1>
+          <p class="hero-lead">
+            Bei 1000 vorab registrierten Nutzern wird TuningHub überarbeitet und
+            wieder verfügbar sein.
+          </p>
+          <a class="button button--primary" href="/src/pages/registrieren/registrieren.html">
+            Jetzt vorab registrieren
+          </a>
+        </div>
+        <div class="gauge-panel" aria-label="Zielwert für den Neustart: 1000 Vorregistrierungen">
+          <div class="gauge-panel__scale" aria-hidden="true"></div>
+          <p class="gauge-panel__label">Zielwert</p>
+          <p class="gauge-panel__number">1000</p>
+          <p class="gauge-panel__text">Vorregistrierungen bis zum Neustart</p>
+        </div>
       </section>
-      <section id="about">
-        <h2>Was ist TuningHub?</h2>
+      <section class="section section--about" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="section-kicker">Teilemarkt / Community</p>
+          <h2 id="about-title">Was ist TuningHub?</h2>
+        </div>
 
-        <p>
-          TuningHub ist ein Marktplatz für Simson- und Mopedteile. Die Plattform
-          verbindet Käufer und Verkäufer an einem Ort und macht die Suche nach
-          passenden Teilen einfacher, schneller und übersichtlicher.
-        </p>
-
-        <p>
-          Egal ob Ersatzteile, Tuningteile oder seltene Fundstücke – TuningHub
-          soll die erste Anlaufstelle für die Simson-Community werden. Nutzer
-          können ihre Teile kostenlos einstellen, entdecken und direkt mit
-          Verkäufern in Kontakt treten.
-        </p>
-
-        <p>
-          Mit dem Neustart von TuningHub soll eine moderne Plattform mit
-          verbesserter Suche, einer besseren Nutzererfahrung und neuen
-          Funktionen, die den Handel von Mopedteilen so einfach wie möglich
-          machen enstehen.
-        </p>
-      </section>
-      <section id="past">
-        <h2>Die Entstehung von TuningHub</h2>
-
-        <div class="event">
-          <div class="date">21. Juni 2025</div>
+        <div class="about-copy">
           <p>
-            Erstellung des
-            <a href="https://www.instagram.com/tuninghub_official/"
-              >TuningHub-Instagram-Accounts</a
-            >
-            und Veröffentlichung des ersten Posts
+            TuningHub ist ein Marktplatz für Simson- und Mopedteile. Die Plattform
+            verbindet Käufer und Verkäufer an einem Ort und macht die Suche nach
+            passenden Teilen einfacher, schneller und übersichtlicher.
+          </p>
+
+          <p>
+            Egal ob Ersatzteile, Tuningteile oder seltene Fundstücke – TuningHub
+            soll die erste Anlaufstelle für die Simson-Community werden. Nutzer
+            können ihre Teile kostenlos einstellen, entdecken und direkt mit
+            Verkäufern in Kontakt treten.
+          </p>
+
+          <p>
+            Mit dem Neustart von TuningHub soll eine moderne Plattform mit
+            verbesserter Suche, einer besseren Nutzererfahrung und neuen
+            Funktionen, die den Handel von Mopedteilen so einfach wie möglich
+            machen entstehen.
           </p>
         </div>
-
-        <div class="event">
-          <div class="date">5. Juli 2025</div>
-          <p>Die ersten 100 Instagram-Follower – nur 14 Tage nach dem Start</p>
+      </section>
+      <section class="section section--timeline" id="past" aria-labelledby="past-title">
+        <div class="section-heading">
+          <p class="section-kicker">Protokoll / Meilensteine</p>
+          <h2 id="past-title">Die Entstehung von TuningHub</h2>
         </div>
 
-        <div class="event">
-          <div class="date">20. Juli 2025</div>
-          <p>Release des ersten MVPs</p>
-          <p>200 Instagram-Follower erreicht</p>
-        </div>
+        <div class="timeline">
+          <article class="event">
+            <div class="date">21. Juni 2025</div>
+            <p>
+              Erstellung des
+              <a href="https://www.instagram.com/tuninghub_official/"
+                >TuningHub-Instagram-Accounts</a
+              >
+              und Veröffentlichung des ersten Posts
+            </p>
+          </article>
 
-        <div class="event">
-          <div class="date">21. Juli 2025</div>
-          <p>Das erste Teil wird auf TuningHub hochgeladen</p>
-        </div>
+          <article class="event">
+            <div class="date">5. Juli 2025</div>
+            <p>Die ersten 100 Instagram-Follower – nur 14 Tage nach dem Start</p>
+          </article>
 
-        <div class="event">
-          <div class="date">27. Juli 2025</div>
-          <p>
-            16 neue Teile und über 200 Website-Aufrufe an einem einzigen Tag
-          </p>
-        </div>
+          <article class="event">
+            <div class="date">20. Juli 2025</div>
+            <p>Release des ersten MVPs</p>
+            <p>200 Instagram-Follower erreicht</p>
+          </article>
 
-        <div class="event">
-          <div class="date">3. August 2025</div>
-          <p>Über 1.000 Website-Aufrufe insgesamt</p>
-        </div>
+          <article class="event">
+            <div class="date">21. Juli 2025</div>
+            <p>Das erste Teil wird auf TuningHub hochgeladen</p>
+          </article>
 
-        <div class="event">
-          <div class="date">16. August 2025</div>
-          <p>1.000 Instagram-Follower erreicht</p>
-        </div>
+          <article class="event">
+            <div class="date">27. Juli 2025</div>
+            <p>
+              16 neue Teile und über 200 Website-Aufrufe an einem einzigen Tag
+            </p>
+          </article>
 
-        <div class="event">
-          <div class="date">26. August 2025</div>
-          <p>500 Website-Aufrufe an einem einzigen Tag</p>
-        </div>
+          <article class="event">
+            <div class="date">3. August 2025</div>
+            <p>Über 1.000 Website-Aufrufe insgesamt</p>
+          </article>
 
-        <div class="event">
-          <div class="date">28. August 2025</div>
-          <p>1.500 Instagram-Follower erreicht</p>
-        </div>
+          <article class="event">
+            <div class="date">16. August 2025</div>
+            <p>1.000 Instagram-Follower erreicht</p>
+          </article>
 
-        <div class="event">
-          <div class="date">8. September 2025</div>
-          <p>2.000 Instagram-Follower erreicht</p>
-        </div>
+          <article class="event">
+            <div class="date">26. August 2025</div>
+            <p>500 Website-Aufrufe an einem einzigen Tag</p>
+          </article>
 
-        <div class="event">
-          <div class="date">11. September 2025</div>
-          <p>Die TuningHub-WhatsApp-Community wird gegründet</p>
-        </div>
+          <article class="event">
+            <div class="date">28. August 2025</div>
+            <p>1.500 Instagram-Follower erreicht</p>
+          </article>
 
-        <div class="event">
-          <div class="date">10. November 2025</div>
-          <p>100 registrierte Nutzer erreicht</p>
-          <p>Über 250 hochgeladene Teile</p>
-        </div>
+          <article class="event">
+            <div class="date">8. September 2025</div>
+            <p>2.000 Instagram-Follower erreicht</p>
+          </article>
 
-        <div class="event">
-          <div class="date">19. November 2025</div>
-          <p>250 registrierte Nutzer erreicht</p>
-          <p>Über 600 hochgeladene Teile</p>
-        </div>
+          <article class="event">
+            <div class="date">11. September 2025</div>
+            <p>Die TuningHub-WhatsApp-Community wird gegründet</p>
+          </article>
 
-        <div class="event">
-          <div class="date">25. Dezember 2025</div>
-          <p>TuningHub wird vorübergehend offline genommen</p>
-        </div>
+          <article class="event">
+            <div class="date">10. November 2025</div>
+            <p>100 registrierte Nutzer erreicht</p>
+            <p>Über 250 hochgeladene Teile</p>
+          </article>
 
-        <div class="event">
-          <div class="date">25. Januar 2026</div>
-          <p>Vollständige Löschung aller Nutzerdaten</p>
+          <article class="event">
+            <div class="date">19. November 2025</div>
+            <p>250 registrierte Nutzer erreicht</p>
+            <p>Über 600 hochgeladene Teile</p>
+          </article>
+
+          <article class="event">
+            <div class="date">25. Dezember 2025</div>
+            <p>TuningHub wird vorübergehend offline genommen</p>
+          </article>
+
+          <article class="event">
+            <div class="date">25. Januar 2026</div>
+            <p>Vollständige Löschung aller Nutzerdaten</p>
+          </article>
         </div>
       </section>
     </main>
-    <footer>
-        <a href="/src/pages/impressum.html">Impressum</a>
-        <a href="/src/pages/datenschutzerklaerung.html">Datenschutzerklärung</a>
+    <footer class="site-footer">
+      <a href="/src/pages/impressum.html">Impressum</a>
+      <a href="/src/pages/datenschutz.html">Datenschutzerklärung</a>
     </footer>
+    <script src="public/scripts/menu.js"></script>
   </body>
 </html>
